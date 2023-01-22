@@ -93,7 +93,16 @@ public class CrimeCriminalDaoImp implements CrimeCriminalDao {
 	@Override
 	public int NoOfSolvedCrime() {
 		// TODO Auto-generated method stub
-		return 0;
+		
+		int count = 0;
+		
+		try(Connection conn = Utility.provideConnection()) {
+			PreparedStatement ps = conn.prepareStatement("select COUNT(*) Count from Crime_CriminalInfo where Status = 1");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return count;
 	}
 	
 	
@@ -103,7 +112,15 @@ public class CrimeCriminalDaoImp implements CrimeCriminalDao {
 	@Override
 	public int NoOfUnsolvedCrime() {
 		// TODO Auto-generated method stub
-		return 0;
+		
+		int count = 0;
+		try(Connection conn = Utility.provideConnection()) {
+			PreparedStatement ps = conn.prepareStatement("select COUNT(*) Count from Crime_CriminalInfo where Status = 0");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return count;
 	}
 
 }

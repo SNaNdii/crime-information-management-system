@@ -37,6 +37,9 @@ public class CrimeDaoImp implements CrimeDao {
 		
 		return msg;
 	}
+	
+//-----------------------------------------------------------------------------------------------------
+	
 
 	@Override
 	public Crime searchCrimeBySction(int section) {
@@ -69,6 +72,9 @@ public class CrimeDaoImp implements CrimeDao {
 		return crime;
 	}
 
+	
+//-----------------------------------------------------------------------------------------------------
+	
 	@Override
 	public int NoOfCrimeRecordedCurrentMonth() {
 		// TODO Auto-generated method stub

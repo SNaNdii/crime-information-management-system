@@ -2,8 +2,12 @@ package com.main;
 
 import java.util.Scanner;
 
+import com.UseCase.CrimeRecordedCurrentMonth;
 import com.UseCase.RegisterCrimeCriminal;
+import com.UseCase.RegisterCrimeRecord;
 import com.UseCase.SearchCrimeBySection;
+import com.UseCase.StatusMarkSolved;
+import com.UseCase.StatusUnsolved;
 
 public class Main {
 	
@@ -23,11 +27,11 @@ public static void main(String[] args) {
 		
 		System.out.println("Enter Your Choice!!");
 		
-		System.out.println("1. Resister Criminal ");
+		System.out.println("1. Register Criminal ");
 		
-		System.out.println("2. Resister Crime ");
+		System.out.println("2. Register Crime ");
 		
-		System.out.println("3. Resister Criminal for Crime ");
+		System.out.println("3. Register Criminal for Crime ");
 		
 		System.out.println("4. Search Criminal by criminal Id ");
 		
@@ -53,9 +57,9 @@ public static void main(String[] args) {
 //				ResisteredCriminal.main(args);
 			}
 			
-//			else if(Choice==2) {
-//				ResisteredCrimeCase1.main(args);
-//			}
+			else if(Choice==2) {
+				RegisterCrimeRecord.main(args);
+			}
 		
 			else if(Choice==3) {
 				RegisterCrimeCriminal.main(args);
@@ -73,13 +77,13 @@ public static void main(String[] args) {
 //				SearchCriminalByCrime.main(args);
 //			}
 //			
-//			else if(Choice==7) {
-//				MarkAsSolved.main(args);
-//			}
+			else if(Choice==7) {
+				StatusMarkSolved.main(args);
+			}
 			
-//			else if(Choice==8) {
-//				MarksAsUnsolved.main(args);
-//			}
+			else if(Choice==8) {
+				StatusUnsolved.main(args);
+			}
 			
 //			else if(Choice==9) {
 //				
@@ -90,9 +94,9 @@ public static void main(String[] args) {
 //				NoOfUnsolvedCrime.main(args);
 //			}
 			
-//			else if(Choice==11) {
-//				NoOfCrimeRecordedCurrentMonth.main(args);
-//			}
+			else if(Choice==11) {
+				CrimeRecordedCurrentMonth.main(args);
+			}
 			
 //			else if(Choice==0) {
 //				System.out.println("THANK YOU !!");
