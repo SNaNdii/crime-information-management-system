@@ -1,6 +1,6 @@
 package com.Dao;
 
-import com.main.CrimaCriminal;
+import com.AllBean.CrimaCriminal;
 
 public interface CrimeCriminalDao {
 

@@ -1,4 +1,4 @@
-package com.main;
+package com.AllBean;
 
 import java.sql.Date;
 

@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import com.main.CrimaCriminal;
+import com.AllBean.CrimaCriminal;
 import com.utility.Utility;
 
 public class CrimeCriminalDaoImp implements CrimeCriminalDao {
